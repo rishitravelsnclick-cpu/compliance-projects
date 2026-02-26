@@ -1,5 +1,12 @@
 # compliance-projects
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![GitHub](https://img.shields.io/badge/GitHub-Repo-success)
+![Status](https://img.shields.io/badge/Compliance-Automation-green)
+
 A collection of Python-based mini systems for AML/KYC automation, built for RegTech and FinTech interviews.
+
+
 
 ## 📂 Projects
 - **KYC Checker** → Age & country validation  
