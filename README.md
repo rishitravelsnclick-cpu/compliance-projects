@@ -2,10 +2,10 @@
 A collection of Python-based mini systems for AML/KYC automation, built for RegTech and FinTech interviews.
 
 ## 📂 Projects
-- **KYC Checker** → Age & country validation
-- **AML Scanner** → Transaction pattern detection *(coming soon)*
-- **PEP Flagger** → Politically Exposed Persons screening *(coming soon)*
-- **Risk Engine** → Combined scoring system *(planned)*
+- **KYC Checker** → Age & country validation  
+- **AML Scanner** → Transaction pattern detection  
+- **PEP Flagger** → Politically Exposed Persons screening  
+- **Risk Engine** → Combined scoring system (KYC + AML + PEP)
 
 ## ✨ Features
 - Python OOP design
@@ -26,6 +26,15 @@ Country: USA
 **Output:**
 
 KYC Failed: Age below threshold
+
+
+## 🧩 Risk Engine Example
+**Input:**
+Age = 17, Country = USA, Transactions = [5000, 200000], Name = John Doe  
+
+**Output:**
+Final Risk Score: 160
+
 
 Clone the repo and run:
 ```bash
