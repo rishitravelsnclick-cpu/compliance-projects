@@ -14,6 +14,19 @@ A collection of Python-based mini systems for AML/KYC automation, built for RegT
 - Real-world compliance mapping
 
 ## 🚀 How to Run
+
+<img width="1266" height="537" alt="image" src="https://github.com/user-attachments/assets/95b957af-d52b-4391-b77f-762ed5f4cfe2" />
+
+## 🧪 Example Run
+**Input:**
+Name: John Doe  
+Age: 17  
+Country: USA
+
+**Output:**
+
+KYC Failed: Age below threshold
+
 Clone the repo and run:
 ```bash
 python KYC_checker.py
