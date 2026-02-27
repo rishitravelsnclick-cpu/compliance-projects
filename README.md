@@ -24,18 +24,38 @@ A collection of Python-based mini systems for AML/KYC automation, built for RegT
 
 <img width="1266" height="537" alt="image" src="https://github.com/user-attachments/assets/95b957af-d52b-4391-b77f-762ed5f4cfe2" />
 
-## Example Run
+## Usage Examples
+
+### KYC Checker
 **Input:**
 Name: John Doe  
 Age: 17  
-Country: USA
+Country: USA  
 
 **Output:**
+KYC Failed: Age below threshold  
 
-KYC Failed: Age below threshold
+---
 
+### AML Scanner
+**Input:**
+Transactions = [5000, 200000, 1500000]  
 
-## Risk Engine Example
+**Output:**
+AML Alert: Suspicious transaction detected (1500000)  
+
+---
+
+### PEP Flagger
+**Input:**
+Name: Jane Smith  
+
+**Output:**
+PEP Alert: Politically Exposed Person detected  
+
+---
+
+### Risk Engine
 **Input:**
 Age = 17, Country = USA, Transactions = [5000, 200000], Name = John Doe  
 
