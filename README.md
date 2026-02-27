@@ -62,6 +62,16 @@ Age = 17, Country = USA, Transactions = [5000, 200000], Name = John Doe
 **Output:**
 Final Risk Score: 160
 
+## Repo Structure
+compliance-projects/
+├── KYC_checker.py
+├── AML_scanner.py
+├── PEP_flagger.py
+├── Risk_engine.py
+├── README.md
+└── requirements.txt
+
+
 ## Roadmap
 - [x] KYC Checker  
 - [x] AML Scanner  
