@@ -13,6 +13,7 @@ A collection of Python-based mini systems for AML/KYC automation, built for RegT
 - **AML Scanner** → Transaction pattern detection  
 - **PEP Flagger** → Politically Exposed Persons screening  
 - **Risk Engine** → Combined scoring system (KYC + AML + PEP)
+- **Transaction Monitoring Tool** → Suspicious transaction flagging, structuring detection, unusual spikes
 
 ## Features
 - Python OOP design
@@ -62,21 +63,36 @@ Age = 17, Country = USA, Transactions = [5000, 200000], Name = John Doe
 **Output:**
 Final Risk Score: 160
 
+
+### Transaction Monitoring Tool
+**Input:**  
+Transactions = [("CUST001", 50000), ("CUST001", 95000), ("CUST001", 120000), ("CUST002", 20000), ("CUST002", 300000)]  
+
+**Output:**  
+{'Account': 'CUST001', 'Amount': 50000, 'Status': 'Normal', 'Notes': []}  
+{'Account': 'CUST001', 'Amount': 95000, 'Status': 'Normal', 'Notes': ['Possible structuring: repeated payments near 100k']}  
+{'Account': 'CUST001', 'Amount': 120000, 'Status': 'Suspicious', 'Notes': ['Transaction above 100k']}  
+{'Account': 'CUST002', 'Amount': 20000, 'Status': 'Normal', 'Notes': []}  
+{'Account': 'CUST002', 'Amount': 300000, 'Status': 'Suspicious', 'Notes': ['Transaction above 100k', 'Unusual spike compared to customer profile']}  
+
 ## Repo Structure
 compliance-projects/
 ├── KYC_checker.py
 ├── AML_scanner.py
 ├── PEP_flagger.py
 ├── Risk_engine.py
+├── transaction_monitor.py
 ├── README.md
 └── requirements.txt
+
 
 
 ## Roadmap
 - [x] KYC Checker  
 - [x] AML Scanner  
 - [x] PEP Flagger  
-- [x] Risk Engine  
+- [x] Risk Engine
+- [x] Transaction Monitoring Tool
 - [ ] External dataset integration  
 - [ ] Dashboard visualization  
 - [ ] API endpoints for real-time checks  
